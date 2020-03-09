@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <style>
+  body
+  {
+      background-color:midnightblue;
+      color:white;
+  }
+  </style>
+  </head>
+  <body>
+
+    <script type="text/javascript">
+		
+		var vetor = new Array(25)
+        var n1=-1, n2=-1, soma
+        var valor
+        
+
+        for(i=0; i<=24; i++)
+        {
+            vetor[i] = parseInt(    Math.random()*100    )
+            if(i<10) document.write("0") // coloca o 0 à esquerda nos números que só tem um dígito
+            document.write(i + ": ")
+            if(vetor[i] < 10) document.write("0") // coloca o 0 à esquerda nos números que só tem um dígito
+            document.write(vetor[i] + "<BR>")
+        }
+        while(n1<0 || n1>24)
+        {
+            n1 = parseInt(prompt("Primeiro índice: "))
+        }
+        while(n2<0 || n2>24)
+        {
+            n2 = parseInt(prompt("Segundo índice: "))
+        }
+
+        soma = vetor[n1] + vetor[n2]
+        document.write("A Soma das posições " + n1 + " e " + n2 + " deu: " + soma)
+
+        valor = parseInt(prompt("Digite um novo valor "))
+        for(i=0;i<=24; i++)
+        {
+            if (valor == vetor[i])
+            {
+                achou = 1
+            }
+        }
+        if (acou = 1)
+        {
+            document.write(" Seu valor está aqui! ")
+        }else
+            
+        {
+            document.write(" Seu valor NÃO está aqui ")
+        }
+        
+
+		
+		
+    </script>  
+  
+  </body>
+</html>
